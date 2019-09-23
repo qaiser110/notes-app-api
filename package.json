@@ -4,7 +4,8 @@
   "description": "A Node.js starter for the Serverless Framework with async/await and unit test support",
   "main": "handler.js",
   "scripts": {
-    "invokeLocal": "serverless invoke local --function create --path mocks/create-event.json",
+    "localCreate": "serverless invoke local --function create --path mocks/create-event.json",
+    "localGet": "serverless invoke local --function get --path mocks/get-event.json",
     "test": "serverless-bundle test"
   },
   "author": "",
