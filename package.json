@@ -6,6 +6,8 @@
   "scripts": {
     "localCreate": "serverless invoke local --function create --path mocks/create-event.json",
     "localGet": "serverless invoke local --function get --path mocks/get-event.json",
+    "deploy": "serverless deploy -v",
+    "deploy:prod": "serverless deploy -v --stage prod",
     "test": "serverless-bundle test"
   },
   "author": "",
